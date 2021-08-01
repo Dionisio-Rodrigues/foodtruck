@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: mexicana;
+    src: url("../fonts/sombrero/SombreroFilled.ttf");
+}
+@font-face {
+    font-family: mexicanaform;
+    src: url("../fonts/Patrick_Hand/PatrickHand-Regular.ttf");
+}
+body{
+    background-color: black;
+}
+.containder{
+    margin:auto;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+header{
+    font-family: mexicana;
+    background: #F16538;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+header img{
+    display: inline-block;
+    height: 80px;
+}
+header h1{
+    color: #b12d1f;
+    text-shadow: 0px 10px 1px black;
+}
+header h2{
+    color: #FCF042;
+    text-shadow: 0px 10px 1px black;
+}
+#nome{
+    margin: 10px;
+    display: inline-block;
+}
+section{
+    background-image: url(../images/mexican-tacos-on-wooden-table.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    overflow: hidden;
+}
+.formContainder{
+    float: right;
+    background-color: #9DE52DDD;
+    font-family: mexicanaform;
+    font-size: 17px;
+    text-align: left;
+    padding: 20px;
+    max-width: 260px;
+    color: #b12d1f;
+    border-radius: 5px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.formContainder p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    background-color: white;
+    color: #b12d1f;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: mexicanaform;
+}
+input:hover{
+    background-color: #FCF042;
+}
+footer{
+    font-family: mexicanaform;
+    background-color: #F16538;
+    overflow: hidden;
+    padding: 10px;
+}
+footer div{
+    text-align: left;
+    float: left;
+    width: calc(100%/3);
+} 
+footer ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+footer li{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    max-width: 70%;
+}
+footer p{
+    margin-top:5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width:710px) {
+    #right{
+        display: none;
+    }
+    .formContainder{
+        float: none;
+        margin:auto;
+    }
+    footer div{
+        text-align: justify;
+        width: 50%;
+    }
+    #contacts{
+        float: right;
+    }
+    #more{
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width:490px) {
+    section{
+        padding: 50px;
+    }
+    .formContainder{
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+    footer div{
+        width: 100%;
+    }
+}
